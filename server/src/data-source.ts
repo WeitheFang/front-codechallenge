@@ -4,8 +4,6 @@ import * as dotenv from 'dotenv'
 
 dotenv.config()
 
-console.log()
-
 export const AppDataSource = new DataSource({
     type: 'mysql',
     host: 'localhost',
