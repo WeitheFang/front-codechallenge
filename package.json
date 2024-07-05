@@ -4,6 +4,9 @@
     "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
     "main": "index.js",
     "scripts": {
+        "start": "concurrently \"npm run start --prefix client\" \"npm run start --prefix server\"",
+        "schema:sync": "cd server && ts-node ./node_modules/typeorm/cli.js schema:sync -d src/data-source.ts",
+        "seed": "cd server && ts-node src/seed/seed.ts",
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write .",
         "prepare": "husky install"
@@ -15,6 +18,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "concurrently": "^8.2.2",
         "husky": "^9.0.11",
         "lint-staged": "^15.2.7",
         "prettier": "^3.3.2"

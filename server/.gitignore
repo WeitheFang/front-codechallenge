@@ -6,6 +6,7 @@ tmp/
 temp/
 .env.development
 .env.production
+.env
 yarn.lock
 .DS_Store
 public/
