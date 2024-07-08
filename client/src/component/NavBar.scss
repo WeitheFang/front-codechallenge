@@ -1,0 +1,16 @@
+.bannerContainer {
+    height: 8rem;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bannerTitle {
+    color: #fff;
+    position: absolute;
+    top: 3%;
+}

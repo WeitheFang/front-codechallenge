@@ -6,10 +6,10 @@ export class PlayerDataEntity extends BaseEntity {
     id: number
 
     @Column({type: 'varchar', length: 255})
-    name: string
+    Name: string
 
     @Column({type: 'varchar', length: 100})
-    team: string
+    Team: string
 
     @Column({type: 'int'})
     GP: number

@@ -12,8 +12,8 @@ const seedData = async () => {
 
     for (let i = 0; i < numberOfPlayers; i++) {
         const playerEntity = new PlayerDataEntity()
-        playerEntity.name = faker.person.fullName({sex: 'male'})
-        playerEntity.team = faker.helpers.arrayElement(teams)
+        playerEntity.Name = faker.person.fullName({sex: 'male'})
+        playerEntity.Team = faker.helpers.arrayElement(teams)
         playerEntity.GP = faker.number.int({min: 1, max: 82})
         playerEntity.MIN = parseFloat(faker.number.float({min: 10, max: 40, multipleOf: 0.1}).toFixed(1))
         playerEntity.PTS = parseFloat(faker.number.float({min: 0, max: 30, multipleOf: 0.1}).toFixed(1))
