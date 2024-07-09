@@ -29,7 +29,7 @@ function App() {
             <CssBaseline />
             <div>
                 <NavBar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-                <HomePage isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+                <HomePage />
             </div>
         </ThemeProvider>
     )
