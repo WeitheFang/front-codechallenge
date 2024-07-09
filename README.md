@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Basketball League Player Stats Data Table
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a data table that renders player statistics for a basketball league.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+-   [Prerequisites](#prerequisites)
+-   [Installation](#installation)
+-   [Usage](#usage)
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   Make sure you have Node.js version v21.7.1 installed. You can download it from [nodejs.org](https://nodejs.org/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To set up the project, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine:
 
-### `npm run build`
+    ```sh
+    git clone https://github.com/WeitheFang/front-codechallenge
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```sh
+    cd front-codechallenge
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the necessary dependencies:
 
-### `npm run eject`
+    ```sh
+    npm i
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Navigate to the server directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```sh
+    cd server
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Replace the .env.example file with your own .env file and input your MySQL username and password
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Synchronize the database schema:
 
-## Learn More
+    ```sh
+    npm run schema:sync
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+7. Seed the database with initial data:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```sh
+    npm run seed
+    ```
 
-### Code Splitting
+8. Navigate back to the root directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```sh
+    cd ..
+    ```
 
-### Analyzing the Bundle Size
+9. Start the application:
+    ```sh
+    npm run start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Once the project is set up and running, you can access the data table to view player statistics for the basketball league. The data table provides an interactive interface to sort and filter player stats.
