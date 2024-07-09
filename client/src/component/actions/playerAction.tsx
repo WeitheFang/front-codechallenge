@@ -1,8 +1,5 @@
 import axios from 'axios'
 import {Dispatch} from 'redux'
-import {ThunkDispatch} from 'redux-thunk'
-import {AnyAction} from 'redux'
-import {useDispatch} from 'react-redux'
 
 export const actionTypes = {
     FETCH_ALL_PLAYERS: 'FETCH_ALL_PLAYERS'

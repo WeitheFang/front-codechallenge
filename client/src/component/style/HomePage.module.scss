@@ -1,3 +1,9 @@
 .searchTextField {
-    width: 500px;
+    width: 50%;
+    height: 20%;
+}
+
+.mobileCheckbox {
+    display: flex;
+    flex-direction: column;
 }
