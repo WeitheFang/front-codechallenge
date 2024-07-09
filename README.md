@@ -28,13 +28,16 @@ To set up the project, follow these steps:
     cd front-codechallenge
     ```
 
-3. Install the necessary dependencies:
+3. Install the necessary dependencies for the root, client, and server:
 
     ```sh
     npm i
+    cd client && npm install
+    cd ..
+    cd server && npm install
     ```
 
-4. Navigate to the server directory:
+4. Navigate to or stay in the server directory:
 
     ```sh
     cd server
@@ -42,25 +45,31 @@ To set up the project, follow these steps:
 
 5. Replace the .env.example file with your own .env file and input your MySQL username and password
 
-6. Synchronize the database schema:
+6. Create a database (schema) named `playerdata` in MySQL:
+
+    ```sql
+    CREATE DATABASE playerdata;
+    ```
+
+7. Synchronize the database schema:
 
     ```sh
     npm run schema:sync
     ```
 
-7. Seed the database with initial data:
+8. Seed the database with initial data:
 
     ```sh
     npm run seed
     ```
 
-8. Navigate back to the root directory:
+9. Navigate back to the root directory:
 
     ```sh
     cd ..
     ```
 
-9. Start the application:
+10. Start the application:
     ```sh
     npm run start
     ```

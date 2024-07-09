@@ -12,3 +12,4 @@ public/
 log/
 build/
 dump.rdb
+package-lock.json
